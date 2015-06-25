@@ -17,3 +17,9 @@ TwitterDriver = Twitter::REST::Client.new do |config|
   config.access_token_secret = ENV['TWITTER_TOKEN_SECRET']
 end
 
+counter = 0
+@boston = []
+while @boston.length < 50
+  @boston << Yelp.client.search('Boston' , {term: 'food', offset: counter})
+  counter += 20
+end
