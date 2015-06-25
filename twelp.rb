@@ -22,4 +22,5 @@ counter = 0
 while @boston.length < 50
   @boston << Yelp.client.search('Boston' , {term: 'food', offset: counter})
   counter += 20
+  puts @boston
 end

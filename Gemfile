@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'twitter'
 gem 'yelp'
+gem 'simple_oauth'
+gem 'twitter'
